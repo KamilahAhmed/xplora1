@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #FFF;
+    font-family: "Poppins";
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url("./images/img1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 1.5rem;
+    z-index: 2;
+}
+
+.small-logo {
+    display: none;
+}
+
+.logo img {
+    padding-right: 0.2rem;
+}
+
+.logo span {
+    font-size: 1.2rem;
+    font-family: "Zen Dots";
+    align-items: flex-start;
+}
+
+.logo span:hover {
+    color:hsla(216, 22%, 50%, 0.56);
+    -webkit-text-stroke: 1px #FFF;
+}
+
+header nav {
+    flex: 1;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navlist {
+    display: inline-block;
+    text-transform: capitalize;
+    list-style: none;
+    margin: 0.5rem 1.5rem;
+    z-index: 2;
+}
+
+.navlist a {
+    text-decoration: none;
+}
+
+.navlist :hover {
+    background-color: rgba(255, 255, 255, 0.50);
+    color: hsla(218, 80%, 16%, 0.84);
+    border: 1px solid rgba(255, 255, 255);
+    border-radius: 20px;
+    padding: 0.25rem 1rem;
+}
+
+.landing {
+    background-color: hsla(216, 22%, 50%, 0.56);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 50%;
+    height: 100vh;
+}
+
+.jumbotron {
+    position: relative;
+    top: 20%;
+    padding: 1.5rem 4rem;
+}
+
+.jumbotron h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    line-height: 1.1;
+    -webkit-text-stroke: 3px #FFF;
+    color: hsla(0, 0%, 100%, 0.4);
+    
+}
+
+.jumbotron p { 
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    text-align: justify;
+}
+
+.jumbotron button {
+    margin: 0.5rem 0;
+    height: 3.5rem;
+    width: 11rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: hsla(218, 80%, 16%, 0.84);
+    border: 1px solid hsla(218, 80%, 16%, 0.84);
+    border-radius: 5px;
+    box-shadow: 10px 15px 10px 0px hsla(0, 0%, 0%, 0.6);
+}
+
+button:hover {
+    border: 5px solid #FFF;
+    background-color: hsla(216, 22%, 50%, 0.2);
+    color: hsla(218, 80%, 16%, 0.84);
+    font-weight: 500;
+}
+
+button:active {
+    margin-top: 10px;
+}
+
+#contact {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+}
+
+#contact img {
+    margin: 0 0.5rem;
+}
+
+#contact img:hover {
+    transform: scale(1.5);
+}
+
+.copyright {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 1500px) {
+    .jumbotron h1 {
+        font-size: 8rem;
+    }
+
+    .jumbotron p {
+        font-size: 1.5rem;
+    }
+
+    .navlist a {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 845px) {
+    .landing {
+        width: 100vw;
+    }
+    
+    .jumbotron h1 {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    .jumbotron h1 {
+        font-size: 4.5rem;
+    }
+
+    .jumbotron {
+        padding: 1.5rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .jumbotron h1 {
+        font-size: 4rem;
+    }
+    
+    .navlist {
+        font-size: 1rem;
+        margin: 0.5rem;
+        z-index: 2;
+    }
+
+    .navlist :hover {
+        padding: 0.25rem 0.5rem;
+    }
+
+    #contact div span {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .jumbotron h1 {
+        font-size: 3.5rem;
+    }
+
+    .big-logo {
+        display: none;
+    }
+    .small-logo {
+        display: flex;
+    }
+
+    .logo span {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .jumbotron h1 {
+        font-size: 3rem;
+    }
+
+    .navlist a {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    header .logo {
+        margin: 0.5rem 1rem;
+    }
+
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+
+    .jumbotron p {
+        font-size: 0.75rem;
+    }
+
+    .jumbotron button {
+        height: 3rem;
+        width: 9rem;
+        font-size: 1.2rem;
+    }
+}
