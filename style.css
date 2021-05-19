@@ -75,7 +75,7 @@ header nav ul {
     color: hsla(218, 80%, 16%, 0.84);
     border: 1px solid rgba(255, 255, 255);
     border-radius: 20px;
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 0.75rem;
 }
 
 .landing {
@@ -133,8 +133,8 @@ button:active {
 
 #contact {
     position: absolute;
-    bottom: 30px;
-    left: 50px;
+    bottom: 20px;
+    left: 60px;
 }
 
 #contact img {
@@ -142,7 +142,11 @@ button:active {
 }
 
 #contact img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
+}
+
+#contact div span, #contact div span a {
+    font-size: 0.75rem;
 }
 
 .copyright {
